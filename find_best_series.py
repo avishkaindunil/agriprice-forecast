@@ -1,10 +1,10 @@
 import pandas as pd
 
-# Use the SAME read line as explore.py — add skiprows=[1] if you used it there
+# Use the SAME read line as explore.py — add skiprows=[1] if used it there
 df = pd.read_csv("data/wfp_food_prices_lka.csv")
 df['date'] = pd.to_datetime(df['date'])
 
-# ---- PART 1: What's actually in the wholesale data? ----
+# ---- PART 1: What's actually in the wholesale data ----
 ws = df[df['pricetype'] == 'Wholesale']
 print("WHOLESALE COMMODITIES:")
 print(ws['commodity'].value_counts())

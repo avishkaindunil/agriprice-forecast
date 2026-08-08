@@ -1,0 +1,5 @@
+Cutoff date: 2025-02-15
+Test rows: 1972
+Naive baseline MAE: 99.33 LKR
+Naive baseline MAPE: 24.7%
+Mean-guess MAE: 140.52 LKR
